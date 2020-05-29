@@ -21,6 +21,8 @@ public class QKMRZScanResult {
     public let expiryDate: Date?
     public let personalNumber: String
     public let personalNumber2: String?
+	public let expiryDateString: String
+	public let birthDateString: String
     
     public lazy fileprivate(set) var faceImage: UIImage? = {
         guard let documentImage = CIImage(image: documentImage) else {
@@ -56,5 +58,7 @@ public class QKMRZScanResult {
         expiryDate = mrzResult.expiryDate
         personalNumber = mrzResult.personalNumber
         personalNumber2 = mrzResult.personalNumber2
+		expiryDateString = mrzResult.expiryDateString
+		birthDateString = mrzResult.birthDateString
     }
 }

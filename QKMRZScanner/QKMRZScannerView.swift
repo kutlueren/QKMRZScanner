@@ -12,7 +12,7 @@ import QKMRZParser
 import AudioToolbox
 import Vision
 
-public protocol QKMRZScannerViewDelegate: AnyObject {
+public protocol QKMRZScannerViewDelegate {
     func mrzScannerView(_ mrzScannerView: QKMRZScannerView, didFind scanResult: QKMRZScanResult)
 }
 
